@@ -34,5 +34,12 @@ namespace Capa_Presentacion
             frm_reporte_cumplimientoTCvsPPTO.Show();
 
         }
+
+        private void cumplimientoTCvsPPTOxTIPOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm_reporte_cumplimientoTCvsPPTOxTipo = new Reporte_CumplimientoTCvsPPTO_xTipo();
+            frm_reporte_cumplimientoTCvsPPTOxTipo.Show();
+
+        }
     }
 }

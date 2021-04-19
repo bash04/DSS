@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteCumplimientoTCBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ListadoCumplimientoTCBindingSource)).BeginInit();
@@ -75,7 +76,8 @@
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cumplimientoTCvsPPTOToolStripMenuItem1});
+            this.cumplimientoTCvsPPTOToolStripMenuItem1,
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -83,7 +85,7 @@
             // cumplimientoTCvsPPTOToolStripMenuItem1
             // 
             this.cumplimientoTCvsPPTOToolStripMenuItem1.Name = "cumplimientoTCvsPPTOToolStripMenuItem1";
-            this.cumplimientoTCvsPPTOToolStripMenuItem1.Size = new System.Drawing.Size(213, 22);
+            this.cumplimientoTCvsPPTOToolStripMenuItem1.Size = new System.Drawing.Size(249, 22);
             this.cumplimientoTCvsPPTOToolStripMenuItem1.Text = "CumplimientoTC_vs_PPTO";
             this.cumplimientoTCvsPPTOToolStripMenuItem1.Click += new System.EventHandler(this.cumplimientoTCvsPPTOToolStripMenuItem1_Click);
             // 
@@ -127,6 +129,13 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // cumplimientoTCvsPPTOxTIPOToolStripMenuItem
+            // 
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem.Name = "cumplimientoTCvsPPTOxTIPOToolStripMenuItem";
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem.Size = new System.Drawing.Size(249, 22);
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem.Text = "CumplimientoTC_vs_PPTO_xTIPO";
+            this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem.Click += new System.EventHandler(this.cumplimientoTCvsPPTOxTIPOToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +170,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem cumplimientoTCvsPPTOxTIPOToolStripMenuItem;
     }
 }
 

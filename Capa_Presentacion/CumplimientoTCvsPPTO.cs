@@ -63,7 +63,7 @@ namespace Capa_Presentacion
             mes_letra = UppercaseFirst(mes_letra);
   
             ReporteCumplimientoTC modeloD = new ReporteCumplimientoTC();
-            var datosResumidos = modeloD.resumeEstatusPorMes(Convert.ToInt32(mes_num), Convert.ToInt32(ano_num));
+            var datosResumidos = modeloD.resumeEstatus_xMes(Convert.ToInt32(mes_num), Convert.ToInt32(ano_num));
 
 
             combo_meses.SelectedValue = mes_num;
@@ -156,7 +156,7 @@ namespace Capa_Presentacion
 
 
             ReporteCumplimientoTC modeloD = new ReporteCumplimientoTC();
-            var datosResumidos = modeloD.resumeEstatusPorMes(Convert.ToInt32(mes_num), Convert.ToInt32(ano_num));
+            var datosResumidos = modeloD.resumeEstatus_xMes(Convert.ToInt32(mes_num), Convert.ToInt32(ano_num));
 
             label4.Visible = true;
             lbMeta.Text = datosResumidos[0].ppto.ToString();

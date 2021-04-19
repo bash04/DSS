@@ -9,6 +9,7 @@ namespace Capa_Negocio
         public int diferencia { get; set; }
         public double porciento { get; set; }
         public string nombre_oficina { get; set; }
+        public string tipo_tarjeta { get; set; }
 
 
 

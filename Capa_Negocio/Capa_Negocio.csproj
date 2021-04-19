@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListadoCumplimientoTC.cs" />
+    <Compile Include="ListadoCumplimientoTCxTipo.cs" />
     <Compile Include="ReporteCumplimientoTC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\DataSources\ListadoCumplimientoTC.datasource" />
+    <None Include="Properties\DataSources\ListadoCumplimientoTCxTipo.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

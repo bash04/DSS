@@ -86,6 +86,12 @@
     <Compile Include="Reporte_CumplimientoTCvsPPTO.Designer.cs">
       <DependentUpon>Reporte_CumplimientoTCvsPPTO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_CumplimientoTCvsPPTO_xTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_CumplimientoTCvsPPTO_xTipo.Designer.cs">
+      <DependentUpon>Reporte_CumplimientoTCvsPPTO_xTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="CumplimientoTCvsPPTO.resx">
       <DependentUpon>CumplimientoTCvsPPTO.cs</DependentUpon>
@@ -102,12 +108,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\Reporte_Cump_TC_xTipo.rdlc" />
     <EmbeddedResource Include="Reportes\Reporte_Cump_TC.rdlc" />
     <EmbeddedResource Include="Reporte_CumplimientoTCvsPPTO.resx">
       <DependentUpon>Reporte_CumplimientoTCvsPPTO.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_CumplimientoTCvsPPTO_xTipo.resx">
+      <DependentUpon>Reporte_CumplimientoTCvsPPTO_xTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Capa_Negocio.ListadoCumplimientoTC.datasource" />
+    <None Include="Properties\DataSources\Capa_Negocio.ListadoCumplimientoTCxTipo.datasource" />
     <None Include="Properties\DataSources\Capa_Negocio.ReporteCumplimientoTC+DatosResumidos.datasource" />
     <None Include="Properties\DataSources\Capa_Negocio.ReporteCumplimientoTC.datasource" />
     <None Include="Properties\Settings.settings">

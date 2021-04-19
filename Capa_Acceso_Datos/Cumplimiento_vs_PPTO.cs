@@ -11,7 +11,9 @@ namespace Capa_Acceso_Datos
   public  class Cumplimiento_vs_PPTO : ConexionSql
     {
 
-        public DataTable obtenerEstatusCumplimientoTC(int mes, int ano)
+        // CUMPLIMIENTO POR OFICINAS 
+
+        public DataTable obtenerEstatusCumplimientoTCporMes(int mes, int ano)
         {
             using (var conexion = obtenerConexion())
             {
@@ -75,6 +77,8 @@ namespace Capa_Acceso_Datos
         }
 
 
+        // CUMPLIMIENTO RESEUMEN POR ZONA 
+        
         public DataTable obtenerResumenCumplimientoTCporMes(int mes, int ano)
         {
             using (var conexion = obtenerConexion())
@@ -118,6 +122,7 @@ namespace Capa_Acceso_Datos
 
 
         }
+
         public DataTable obtenerResumenCumplimientoTC_EneroAlaFecha()
         {
             using (var conexion = obtenerConexion())
@@ -139,6 +144,31 @@ namespace Capa_Acceso_Datos
 
         }
 
-      
+
+        // CUMPLIMIENTO POR OFICINAS POR TIPO TARJETA
+
+        public DataTable obtenerEstatusCumplimientoTCporMes_xTipo(int mes, int ano)
+        {
+            using (var conexion = obtenerConexion())
+            {
+                conexion.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = conexion;
+                    command.CommandText = @"consulta_cumplimiento_TC_xMes_xTipo";
+                    command.Parameters.AddWithValue("@mes", mes);
+                    command.Parameters.AddWithValue("@anoc", ano);
+                    command.CommandType = CommandType.StoredProcedure;
+                    var reader = command.ExecuteReader();
+                    var table = new DataTable();
+                    table.Load(reader);
+                    reader.Dispose();
+                    return table;
+                }
+            }
+
+
+        }
+
     }
 }
